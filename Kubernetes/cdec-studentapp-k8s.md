@@ -49,7 +49,11 @@ docker login
 docker push username/backendrepo:tag
 ```
 6. step6 : run ingress if using | update backend.yaml to loadbalancer
-`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml` -- run to apply ingress 
+- run to apply ingress 
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+```
+
 ## also apply ingress.yaml
 ```ingress.yaml
 apiVersion: networking.k8s.io/v1
